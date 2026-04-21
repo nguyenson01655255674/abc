@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi" ,lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm - Công Ty TNHH Chung Hằng</title>
+    <link rel="stylesheet" href="../thiết kế css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo" style="margin-left: 0; padding-left: 0;">
+                <img src="../thiết kế css/ảnh (img)/logo.jpg" alt="Logo Công Ty TNHH Chung Hằng">
+                <h1>Công Ty TNHH Chung Hằng</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Mở menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="index.html#about">Giới Thiệu</a></li>
+                    <li><a href="index.html#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Sản Phẩm Của Chúng Tôi</h2>
+
+                <div class="product-carousel">
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" aria-label="Hình trước">&#10094;</button>
+                        <img id="carouselImage" src="../thiết kế css/ảnh (img)/phong cách châu âu quý phái/186491349_139293024896303_8347618329646340863_n.jpg" alt="Phong cách Châu Âu Quý Phái">
+                        <button class="carousel-btn next" aria-label="Hình sau">&#10095;</button>
+                    </div>
+                    <div class="carousel-caption" id="carouselCaption">Phong cách Châu Âu Quý Phái</div>
+                    <div class="carousel-thumbnails" id="carouselThumbnails"></div>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-item" data-title="CHUNG CƯ - XU HƯỚNG TƯƠNG LAI" data-description="Bộ ảnh nội thất căn hộ chung cư, phong cách hiện đại, trẻ trung.">
+                        <img src="../thiết kế css/ảnh (img)/CHUNG CƯ - XU HƯỚNG TƯƠNG LAI/472989090_1003272221831708_7743880649575566154_n.jpg" alt="CHUNG CƯ - XU HƯỚNG TƯƠNG LAI">
+                        <h3>CHUNG CƯ - XU HƯỚNG TƯƠNG LAI</h3>
+                        <p>Công nghệ thi công gỗ hiện đại cho căn hộ chung cư sang trọng.</p>
+                    </div>
+                    <div class="product-item" data-title="Phong cách Châu Âu Quý Phái" data-description="Bộ ảnh nội thất châu Âu quý phái, sang trọng và tinh tế.">
+                        <img src="../thiết kế css/ảnh (img)/phong cách châu âu quý phái/186491349_139293024896303_8347618329646340863_n.jpg" alt="Phong cách Châu Âu Quý Phái">
+                        <h3>Phong cách Châu Âu Quý Phái</h3>
+                        <p>Phong cách cao cấp phù hợp không gian phòng khách và phòng ngủ.</p>
+                    </div>
+                    <div class="product-item" data-title="Phong cách Cổ Điển" data-description="Bộ ảnh phong cách cổ điển, họa tiết hoàng gia.">
+                        <img src="../thiết kế css/ảnh (img)/phong cách cổ điển/470186065_983945713764359_5829741203146925974_n.jpg" alt="Phong cách Cổ Điển">
+                        <div class="survey">
+                            <input type="checkbox" name="feed-back" id="">
+                        </div>
+                        <h3>Phong cách Cổ Điển</h3>
+                        <p>Kết hợp hoa văn tinh xảo và chất liệu gỗ cao cấp.</p>
+                    </div>
+                    <div class="product-item" data-title="Phòng khách sạn bán tân cổ điển" data-description="Bộ ảnh phòng khách sạn hiện đại và tân cổ điển.">
+                        <img src="../thiết kế css/ảnh (img)/phòng khách sạn phong cách bán tân cổ điển/186474684_149850400507232_126503323833020866_n.jpg" alt="Phòng khách sạn bán tân cổ điển">
+                        <h3>Phòng khách sạn bán tân cổ điển</h3>
+                        <p>Thiết kế ấm cúng, sang trọng cho khách sạn cao cấp.</p>
+                    </div>
+                    <div class="product-item" data-title="Trang trọng dành cho gia đình" data-description="Bộ ảnh không gian gia đình tráng trọng, nội thất cao cấp.">
+                        <img src="../thiết kế css/ảnh (img)/trang trọng dành cho gia đình/470778520_988299129995684_5366523733881977447_n.jpg" alt="Trang trọng dành cho gia đình">
+                        <div class="survey">
+                            <input type="checkbox" name="feed-back" id="">
+                        </div>
+                        <h3>Trang trọng dành cho gia đình</h3>
+                        <p>Thiết kế nội thất dành cho gia đình yêu thích phong cách hoàng gia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="productModal" class="modal">
+            <span class="modal-close">&times;</span>
+            <button class="modal-back" aria-label="Quay lại">⇦ Quay lại</button>
+            <div class="modal-body">
+                <button class="modal-nav prev" aria-label="Ảnh trước">&#10094;</button>
+                <img class="modal-content" id="modalImage" alt="Sản phẩm">
+                <button class="modal-nav next" aria-label="Ảnh sau">&#10095;</button>
+            </div>
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Công Ty Nội Thất Trung Hằng. Tất cả quyền được bảo lưu.</p>
+            <p>Địa chỉ: Cẩm Phả, Quảng Ninh · Hải Phòng · Hạ Long, Quảng Ninh</p>
+            <p>Điện thoại: +84 96 441 48 98</p>
+            <p>Email: <a href="mailto:chunghangcompany@gmail.com">chunghangcompany@gmail.com</a></p>
+            <a href="https://www.facebook.com/chunghangfurniturecompany?rdid=bure32tFRRQFQoMc&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17HFHiywGW#" target="_blank">Theo dõi chúng tôi trên Facebook</a>
+        </div>
+    </footer>
+
+    <script src="../sử lý js/scrip.js"></script>
+</body>
+</html>
